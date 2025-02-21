@@ -1,0 +1,252 @@
+:root {
+    --main-color: white;
+    --main-text-color: black;
+    --body-background-color: black;
+    --header-animate-text-color: rgb(255, 0, 0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "motiva-sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: var(--body-background-color);
+}
+
+
+@keyframes colorChange {
+    0% { background-color: red; }
+    50% { background-color: purple; }
+    100% { background-color: red; }
+}
+
+.GradientAnimation {
+    animation: colorChange 12s infinite;
+}
+
+.HeadLogo {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: #ff0000;
+}
+
+.VideoScale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.Main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainTitleDescription {
+    text-align: center;
+    color: whitesmoke;
+    position: absolute;
+    margin-top: 30%;
+}
+
+.MainTitleText {
+    display: flex;
+    font-size: 5vw;
+    color: whitesmoke;
+    position: absolute;
+    margin-top: 20%;
+}
+
+.AnimadedHover {
+    color: var(--main-text-color); 
+    transition: color 0.18s ease-in-out; 
+  }
+  
+  .AnimadedHover:hover {
+    color: var(--header-animate-text-color); 
+  }
+  
+  .HeadPart {
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* ensures the header stays on top */
+  }
+  
+
+.HeadPartList {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: center;
+}
+
+.HeadListButton {
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    font-size: medium;
+}
+
+.BuyButton {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+
+.TopVideo {
+    position: relative;
+    margin: 0 auto;
+}
+
+.Discover {
+    display: flex;
+    background-color: rgb(77, 73, 73);
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    padding-bottom: 8%;
+    padding-top: 8%;
+}
+
+.DiscoverDiv {
+    max-width: 40%;
+    text-align: center;
+    background-color: rgb(11, 9, 9);
+}
+
+.DiscoverImage {
+    display: flex;
+}
+
+.DiscoverText {
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.WalkingSteamLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.DiscoverDivButton {
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+.Compare {
+    display: flex;
+    background-color: var(--main-color);
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+    padding: 20px;
+}
+
+.CompareProducts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.Product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ProductPricing {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.CompareTitle {
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.CompareBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.CompareBottomText {
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+    
+    
+.GameLogoMilesMorales {
+    display: flex;
+    position: absolute;
+    padding-top: 45%;
+    width: 10%;
+    height: 10%;
+}
+
+.Footer {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+
+.FooterText {
+    display: flex;
+    color: rgb(0, 0, 0);
+    padding-right: 15%;
+    justify-content: right;
+}
+
+.FooterImportant {
+    color: rgb(114, 110, 110);
+    background-color: white;
+    justify-content: left;
+    font-size: small;
+    margin-left: 5%;
+    margin-right: 25%;
+}
+
+.FooterLogo {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+@media (max-width: 400px) {
+    .CompareProducts {
+        flex-direction: column;
+    }
+    .HeadPartList {
+        gap: 1%;
+    }
+}
+
+@media (max-width: 210px) {
+    .HeadPartList {
+        flex-direction: column;
+    }
+}

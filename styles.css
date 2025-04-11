@@ -29,7 +29,7 @@ body {
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    background-color: #ff0000;
+    position: relative;
 }
 
 .VideoScale {
@@ -60,6 +60,19 @@ body {
     color: whitesmoke;
     position: absolute;
     margin-top: 20%;
+    padding-bottom: 5%;
+}
+
+.BuyButtonMain {
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    background-color: #ff0000;
+    color: whitesmoke;
+    padding: 1em 2em;
+    border: none;
+    margin-top: 40%;
+    border-radius: 40%;
 }
 
 .AnimadedHover {
@@ -102,6 +115,8 @@ body {
     cursor: pointer;
     background-color: #ff0000;
     border-radius: 50%;
+    font-size: medium;
+    border: none;
 }
 
 .TopVideo {
@@ -117,10 +132,13 @@ body {
     gap: 10%;
     padding-bottom: 8%;
     padding-top: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .DiscoverDiv {
-    max-width: 40%;
+    width: 80%;
+    height: 100%;
     text-align: center;
     background-color: rgb(11, 9, 9);
 }
@@ -141,6 +159,7 @@ body {
     justify-content: center;
     width: 100%;
     background-repeat: no-repeat;
+    height: 65%;
 }
 
 .DiscoverDivButton {
@@ -211,7 +230,7 @@ body {
 
 .Footer {
     display: flex;
-    background-color: white;
+    background-color: #F8F8F8;
     flex-direction: column;
 }
 

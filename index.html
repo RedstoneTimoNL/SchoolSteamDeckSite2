@@ -12,7 +12,7 @@
     <header class="HeadPart"> 
         <nav>
             <ul class="HeadPartList">
-                <img class="HeadLogo"></img>
+                <img class="HeadLogo GradientAnimation"></img>
                 <button class="HeadListButton AnimadedHover">Steam Deck OLED</a></button>
                 <button class="HeadListButton AnimadedHover">Steam Deck LCD</a></button>
                 <button class="HeadListButton AnimadedHover">Dock</a></button>
@@ -27,6 +27,7 @@
         <h1 class="MainTitleText">Jouw spellen, overal</h1>
         <h2 class="MainTitleDescription">Een krachtig apparaat om overal te gamen, met optimaal comfort en een console-ervaring</h2>
         <video class="TopVideo VideoScale" src="oled_orb_3.mp4" controls autoplay loop></video>
+        <button class="BuyButtonMain">Nu Kopen!</button>
     </div>
     <div class="SecondVideoPart">
         <video class="TopVideo VideoScale" src="overview_oled.mp4" controls autoplay loop></video>
@@ -127,7 +128,6 @@
         <div class="FooterImportant">
             <p>Productspecificaties kunnen veranderen.</p>
             <p>© 2025 Valve Corporation. Alle rechten voorbehouden. Alle handelsmerken zijn eigendom van hun respectieve eigenaren in de Verenigde Staten en andere landen. Steam, het Steam-logo, Steam Deck en het Steam Deck-logo zijn handelsmerken en/of geregistreerde handelsmerken van Valve Corporation in de Verenigde Staten en/of andere landen.</p>
-             <p>This is a School project site. Its not ment to be a copy of Valve`s offical steam deck site</p>
         </div>
     </div>
 </body>
@@ -139,11 +139,15 @@
 
     window.addEventListener('load', function() {
         const videos = document.querySelectorAll('.TopVideo');
-        document.body.addEventListener('click', function() {
+        function LoadVideos () {
             videos.forEach(video => {
                 delay(500, () => video.play()); // 
             });
+        }
+        document.body.addEventListener('click', function() {
+            LoadVideos()
         });
+        LoadVideos()
     });
     </script>
     <script>
@@ -158,7 +162,7 @@
             if (RandomNumber == 2) {
                 FooterLogo.src = "Footer2.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "black";
+                    element.style.backgroundColor = "#0D0B10";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "white";
@@ -166,7 +170,7 @@
             } else if (RandomNumber == 3) {
                 FooterLogo.src = "Footer3.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "white";
+                    element.style.backgroundColor = "#CAC8D5";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "black";
@@ -174,7 +178,7 @@
             } else if (RandomNumber == 4) {
                 FooterLogo.src = "Footer4.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "white";
+                    element.style.backgroundColor = "#FFFFFF";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "black";
@@ -182,7 +186,7 @@
             } else if (RandomNumber == 5) {
                 FooterLogo.src = "Footer5.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "white";
+                    element.style.backgroundColor = "#F0EAEA";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "black";
@@ -190,7 +194,7 @@
             } else if (RandomNumber == 6) {
                 FooterLogo.src = "Footer6.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "black";
+                    element.style.backgroundColor = "#020202";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "white";
@@ -198,7 +202,7 @@
             } else if (RandomNumber == 7) {
                 FooterLogo.src = "Footer7.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "white";
+                    element.style.backgroundColor = "#E8E8E8";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "black";
@@ -206,7 +210,7 @@
             } else if (RandomNumber == 8) {
                 FooterLogo.src = "Footer8.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "lightblue";
+                    element.style.backgroundColor = "#0C6BC5";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "black";
@@ -214,7 +218,7 @@
             } else if (RandomNumber == 9) {
                 FooterLogo.src = "Footer9.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "black";
+                    element.style.backgroundColor = "#121315";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "white";
@@ -222,23 +226,23 @@
             } else if (RandomNumber == 10) {
                 FooterLogo.src = "Footer10.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "white";
+                    element.style.backgroundColor = "#E9E9E9";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "black";
                 });
             } else if (RandomNumber == 11) {
-                FooterLogo.src = "Footer3.jpg";
+                FooterLogo.src = "Footer11.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "white";
+                    element.style.backgroundColor = "#FFFFFF";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "black";
                 });
             } else if (RandomNumber == 12) {
-                FooterLogo.src = "Footer3.jpg";
+                FooterLogo.src = "Footer12.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "gray";
+                    element.style.backgroundColor = "#1F2E35";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "white";
@@ -246,7 +250,7 @@
             } else if (RandomNumber == 13) {
                 FooterLogo.src = "Footer13.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "black";
+                    element.style.backgroundColor = "#0C0C0E";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "white";
@@ -254,7 +258,7 @@
             } else if (RandomNumber == 14) {
                 FooterLogo.src = "Footer14.jpg";
                 Footer.forEach(element => {
-                    element.style.backgroundColor = "black";
+                    element.style.backgroundColor = "#050505";
                 });
                 FooterText.forEach(element => {
                     element.style.color = "white";
